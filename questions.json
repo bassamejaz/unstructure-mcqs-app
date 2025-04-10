@@ -1,0 +1,489 @@
+{
+  "transformers": 
+  [
+    {
+      "question": "What is the primary component that allows Transformers to model relationships between all tokens in a sequence simultaneously?",
+      "options": {
+        "A": "Recurrent units",
+        "B": "Convolutional layers",
+        "C": "Self-attention mechanism",
+        "D": "Pooling layers"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following are components of the original Transformer encoder architecture? (Select all that apply)",
+      "options": {
+        "A": "Positional Encoding",
+        "B": "Multi-Head Attention",
+        "C": "GRU cells",
+        "D": "Feedforward Network"
+      },
+      "correct_options": ["A", "B", "D"]
+    },
+    {
+      "question": "In Transformer models, what is the purpose of positional encoding?",
+      "options": {
+        "A": "To enhance model convergence",
+        "B": "To provide recurrence to the model",
+        "C": "To preserve token order information",
+        "D": "To reduce computational complexity"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "What is the key difference between self-attention and multi-head attention in Transformers?",
+      "options": {
+        "A": "Self-attention is used only in the decoder",
+        "B": "Multi-head attention uses multiple self-attention mechanisms in parallel",
+        "C": "Self-attention uses multiple attention heads",
+        "D": "Multi-head attention uses RNNs internally"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following statements is true about Transformers compared to RNNs and LSTMs?",
+      "options": {
+        "A": "Transformers process sequences sequentially",
+        "B": "Transformers require fewer data to train than RNNs",
+        "C": "Transformers have higher time complexity than LSTMs",
+        "D": "Transformers allow parallel processing of sequence elements"
+      },
+      "correct_options": ["D"]
+    },
+    {
+      "question": "What role does the masking mechanism play in the decoder of a Transformer model during training?",
+      "options": {
+        "A": "It ensures tokens are encoded with position",
+        "B": "It prevents the model from attending to future tokens",
+        "C": "It regularizes the model",
+        "D": "It increases the batch size"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following techniques is used in BERT to pretrain its Transformer encoder? (Select all that apply)",
+      "options": {
+        "A": "Masked Language Modeling",
+        "B": "Next Sentence Prediction",
+        "C": "Causal Language Modeling",
+        "D": "Sequence-to-Sequence Translation"
+      },
+      "correct_options": ["A", "B"]
+    },
+    {
+      "question": "The Transformer decoder is used primarily in which of the following models? (Select all that apply)",
+      "options": {
+        "A": "GPT",
+        "B": "BERT",
+        "C": "T5",
+        "D": "Transformer (Vaswani et al.)"
+      },
+      "correct_options": ["A", "C", "D"]
+    },
+    {
+      "question": "In the Transformer architecture, what is the dimensionality of the output from each attention head if the model’s hidden size is 512 and the number of heads is 8?",
+      "options": {
+        "A": "512",
+        "B": "64",
+        "C": "128",
+        "D": "8"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following are advantages of Transformer models over traditional RNNs? (Select all that apply)",
+      "options": {
+        "A": "Better handling of long-range dependencies",
+        "B": "Parallel training capability",
+        "C": "Fewer parameters than RNNs",
+        "D": "Use of attention mechanisms"
+      },
+      "correct_options": ["A", "B", "D"]
+    },
+    {
+      "question": "What does the 'scale' in Scaled Dot-Product Attention refer to in Transformer models?",
+      "options": {
+        "A": "Normalizing output vectors",
+        "B": "Adjusting attention weights by the length of the sequence",
+        "C": "Dividing dot products by the square root of key dimension",
+        "D": "Amplifying gradients during backpropagation"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following best describes the Layer Normalization used in Transformers?",
+      "options": {
+        "A": "It normalizes across the batch dimension",
+        "B": "It is applied before the attention and feedforward blocks",
+        "C": "It normalizes across the feature dimensions for each example",
+        "D": "It is applied to the final output only"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "What does 'causal attention' ensure in autoregressive Transformers like GPT?",
+      "options": {
+        "A": "Tokens only attend to previous tokens",
+        "B": "Tokens can attend bidirectionally",
+        "C": "Only special tokens are attended",
+        "D": "No masking is applied"
+      },
+      "correct_options": ["A"]
+    },
+    {
+      "question": "Which of the following are common Transformer variants? (Select all that apply)",
+      "options": {
+        "A": "BERT",
+        "B": "GPT",
+        "C": "XLNet",
+        "D": "AlexNet"
+      },
+      "correct_options": ["A", "B", "C"]
+    },
+    {
+      "question": "Why is multi-head attention beneficial in Transformers?",
+      "options": {
+        "A": "It reduces training time",
+        "B": "It helps capture different representation subspaces",
+        "C": "It increases the number of tokens per batch",
+        "D": "It forces attention to be uniform across all tokens"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which Transformer-based model is designed for **text-to-text** tasks and uses an encoder-decoder architecture?",
+      "options": {
+        "A": "BERT",
+        "B": "GPT-2",
+        "C": "T5",
+        "D": "RoBERTa"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "In Transformers, what is the main function of the Feedforward Network within each encoder block?",
+      "options": {
+        "A": "To generate embeddings",
+        "B": "To perform linear transformation followed by non-linearity",
+        "C": "To project tokens into positional space",
+        "D": "To calculate attention weights"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following techniques helps prevent overfitting in Transformer models? (Select all that apply)",
+      "options": {
+        "A": "Dropout",
+        "B": "Data Augmentation",
+        "C": "Label Smoothing",
+        "D": "Gradient Clipping"
+      },
+      "correct_options": ["A", "B", "C"]
+    },
+    {
+      "question": "How are attention scores computed in the Transformer’s self-attention mechanism?",
+      "options": {
+        "A": "Using cosine similarity between values",
+        "B": "By applying a softmax over dot product of queries and keys",
+        "C": "Using recurrent layers to align tokens",
+        "D": "By summing query and key vectors directly"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following are characteristics of the **Transformer decoder** architecture? (Select all that apply)",
+      "options": {
+        "A": "Masked self-attention layer",
+        "B": "Cross-attention with encoder output",
+        "C": "Unidirectional attention only",
+        "D": "Bidirectional self-attention"
+      },
+      "correct_options": ["A", "B", "C"]
+    },
+    {
+      "question": "Which positional encoding technique is used in the original Transformer model?",
+      "options": {
+        "A": "Learned embeddings",
+        "B": "Sinusoidal functions",
+        "C": "Fourier transforms",
+        "D": "Token frequency embeddings"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following is NOT an advantage of Transformer-based models over traditional RNNs?",
+      "options": {
+        "A": "Improved parallelism",
+        "B": "Better handling of long-range dependencies",
+        "C": "Lower memory consumption",
+        "D": "Scalability to large datasets"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "What is the main role of the softmax function in the self-attention mechanism?",
+      "options": {
+        "A": "To normalize input embeddings",
+        "B": "To initialize weights in attention heads",
+        "C": "To convert raw attention scores into probabilities",
+        "D": "To regularize the attention weights"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which Transformer-based model extends BERT using permutation-based training instead of masking?",
+      "options": {
+        "A": "DistilBERT",
+        "B": "GPT",
+        "C": "XLNet",
+        "D": "T5"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following optimizers is commonly used to train Transformer models?",
+      "options": {
+        "A": "SGD",
+        "B": "Adam with learning rate warm-up",
+        "C": "RMSprop",
+        "D": "Adagrad"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following challenges is commonly faced when scaling Transformers to very long sequences? (Select all that apply)",
+      "options": {
+        "A": "Quadratic memory complexity",
+        "B": "Vanishing gradients",
+        "C": "High computational cost",
+        "D": "Attention dropout explosion"
+      },
+      "correct_options": ["A", "C"]
+    },
+    {
+      "question": "Which module in a Transformer is responsible for learning interactions between tokens at different positions?",
+      "options": {
+        "A": "LayerNorm",
+        "B": "Embedding Layer",
+        "C": "Self-Attention",
+        "D": "Output Linear Layer"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following describe applications of Transformer models? (Select all that apply)",
+      "options": {
+        "A": "Machine Translation",
+        "B": "Document Summarization",
+        "C": "Time Series Forecasting",
+        "D": "Speech Recognition"
+      },
+      "correct_options": ["A", "B", "C", "D"]
+    },
+    {
+      "question": "Which technique helps reduce the quadratic attention cost in long-sequence Transformers?",
+      "options": {
+        "A": "DropConnect",
+        "B": "Windowed or Sparse Attention",
+        "C": "Recursive Layers",
+        "D": "Batch Normalization"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "In a Transformer decoder, how does cross-attention differ from self-attention?",
+      "options": {
+        "A": "Cross-attention attends only to future tokens",
+        "B": "Cross-attention computes attention using keys and values from the encoder",
+        "C": "Self-attention uses positional encoding, but cross-attention does not",
+        "D": "Cross-attention outputs embeddings directly used for classification"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Why are residual connections important in Transformer architectures?",
+      "options": {
+        "A": "They prevent overfitting by reducing model capacity",
+        "B": "They allow gradients to flow more easily through deep networks",
+        "C": "They compress input embeddings",
+        "D": "They enhance positional encoding"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following is a limitation of the original Transformer architecture for very long inputs?",
+      "options": {
+        "A": "Low accuracy on short sequences",
+        "B": "Inability to model attention",
+        "C": "Quadratic scaling with sequence length",
+        "D": "Unstable embeddings"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which model architecture introduces an efficient attention mechanism for long sequences by approximating full attention?",
+      "options": {
+        "A": "BERT",
+        "B": "Longformer",
+        "C": "XLNet",
+        "D": "ALBERT"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "What is one key reason for using weight sharing in models like ALBERT?",
+      "options": {
+        "A": "To allow deeper encoder layers",
+        "B": "To improve inference time",
+        "C": "To reduce the number of parameters",
+        "D": "To encourage bidirectional context"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which component in Transformers is responsible for modeling non-linear transformations?",
+      "options": {
+        "A": "Attention head",
+        "B": "Feedforward network with ReLU activation",
+        "C": "Positional encoder",
+        "D": "Normalization layer"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following are characteristics of Vision Transformers (ViTs)? (Select all that apply)",
+      "options": {
+        "A": "Input images are split into patches",
+        "B": "They use convolution layers throughout",
+        "C": "They rely on self-attention for spatial understanding",
+        "D": "They require large datasets to train effectively"
+      },
+      "correct_options": ["A", "C", "D"]
+    },
+    {
+      "question": "Which problem does label smoothing address in training Transformer models?",
+      "options": {
+        "A": "Overfitting to the validation set",
+        "B": "Gradient vanishing",
+        "C": "Overconfidence in predictions",
+        "D": "Memory bottleneck in attention"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "What distinguishes encoder-only Transformer models like BERT from encoder-decoder models like T5?",
+      "options": {
+        "A": "They use LSTMs for attention",
+        "B": "They lack positional encodings",
+        "C": "They are designed for understanding tasks only",
+        "D": "They require causal masking"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which type of masking is essential in the encoder of a standard Transformer model?",
+      "options": {
+        "A": "Causal Masking",
+        "B": "Padding Mask",
+        "C": "Dropout Mask",
+        "D": "Temporal Mask"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which design principle of the Transformer allows the same architecture to be used for diverse NLP tasks?",
+      "options": {
+        "A": "Task-specific training for each head",
+        "B": "Use of pre-trained language-specific embeddings",
+        "C": "Modularity and attention-based learning without task-specific changes",
+        "D": "Convolutional filters in initial layers"
+      },
+      "correct_options": ["C"]
+    }
+  ],
+  "lstm": [
+    {
+      "question": "What problem does LSTM solve compared to standard RNNs?",
+      "options": {
+        "A": "Vanishing gradient problem",
+        "B": "Overfitting",
+        "C": "Computational complexity",
+        "D": "Parameter efficiency"
+      },
+      "correct_options": [
+        "A"
+      ],
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is a component of an LSTM cell?",
+      "options": {
+        "A": "Attention mechanism",
+        "B": "Forget gate",
+        "C": "Position embedding",
+        "D": "Dropout layer"
+      },
+      "correct_options": [
+        "B"
+      ],
+      "explanation": "An LSTM (Long Short-Term Memory) cell is a type of recurrent neural network architecture designed to remember information for longer periods than traditional RNNs. The key components of an LSTM cell include:\n\n**Correct Answer:**\n- **B: Forget gate** - This is indeed a core component of an LSTM cell. The forget gate determines what information from the cell state should be discarded (i.e., forgotten) at each time step. It uses a sigmoid activation function to output values between 0 and 1, which indicate how much of the previous cell state should be retained or discarded. This allows the LSTM to control the flow of information and dynamically adapt to the input sequence.\n\n**Incorrect Answers:**\n- **A: Attention mechanism** - While attention mechanisms are widely used in various neural network architectures, especially in sequence-to-sequence tasks, they are not a component of LSTM cells. Attention mechanisms enable models to focus on specific parts of the input sequence rather than processing everything uniformly. They can be used alongside LSTMs but are separate constructs.\n\n- **C: Position embedding** - Position embeddings are commonly used in transformer models to provide information about the order of the sequence. They help models understand the relative positions of words in a sequence. LSTMs do not use position embeddings, as they inherently handle sequence order through their recurrent architecture, maintaining a temporal order via their hidden states.\n\n- **D: Dropout layer** - Dropout is a regularization technique used to prevent overfitting by randomly setting a proportion of features to zero during training. While dropout can be applied to LSTMs or any neural network architecture to improve training and generalization, it is not an intrinsic component of the LSTM cell itself.\n\nIn summary, the forget gate is integral to the operation and functionality of LSTM cells, enabling them to manage cell states effectively. In contrast, attention mechanisms, position embeddings, and dropout layers may play significant roles in broader neural network architectures but are not specific to LSTM cells."
+    }
+  ],
+  "gru": [
+    {
+      "question": "How many gates does a GRU cell have?",
+      "options": {
+        "A": "1",
+        "B": "2",
+        "C": "3",
+        "D": "4"
+      },
+      "correct_options": [
+        "B"
+      ],
+      "explanation": ""
+    },
+    {
+      "question": "Which of the following is true about GRU compared to LSTM?",
+      "options": {
+        "A": "GRU has more parameters",
+        "B": "GRU is computationally more expensive",
+        "C": "GRU combines the input and forget gates into a single update gate",
+        "D": "GRU was developed before LSTM"
+      },
+      "correct_options": [
+        "C"
+      ],
+      "explanation": ""
+    }
+  ],
+  "rag": [
+    {
+      "question": "What does RAG stand for in the context of language models?",
+      "options": {
+        "A": "Random Access Generation",
+        "B": "Retrieval-Augmented Generation",
+        "C": "Recursive Attention Graph",
+        "D": "Responsive Answer Generation"
+      },
+      "correct_options": [
+        "B"
+      ],
+      "explanation": ""
+    },
+    {
+      "question": "What is the primary benefit of using RAG with language models?",
+      "options": {
+        "A": "Faster inference",
+        "B": "Lower memory requirements",
+        "C": "Access to up-to-date information not in training data",
+        "D": "Simpler model architecture"
+      },
+      "correct_options": [
+        "C"
+      ],
+      "explanation": ""
+    }
+  ]
+}
