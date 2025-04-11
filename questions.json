@@ -485,5 +485,1283 @@
       ],
       "explanation": ""
     }
+  ],
+  "vector_search_and_embeddings": [
+    {
+      "question": "What is the primary purpose of vector embeddings in unstructured data processing?",
+      "options": {
+        "A": "To compress text data into smaller files",
+        "B": "To represent words or documents as dense numerical vectors capturing semantic meaning",
+        "C": "To encrypt sensitive text data",
+        "D": "To convert images into text descriptions"
+      },
+      "correct_options": ["B"],
+      "explanation": "Vector embeddings transform words, sentences, or documents into numerical vectors in a high-dimensional space, where similar items are closer together. This enables semantic search, clustering, and other ML tasks."
+    }
+  ],
+  "Word2Vec": [
+    {
+      "question": "Which of the following is a key feature of Word2Vec?",
+      "options": {
+        "A": "It relies on global co-occurrence statistics like GloVe",
+        "B": "It uses a neural network to predict surrounding words (CBOW) or target words (Skip-gram)",
+        "C": "It requires manual feature engineering for word relationships",
+        "D": "It only works for languages with explicit word boundaries"
+      },
+      "correct_options": ["B"],
+      "explanation": "Word2Vec learns word embeddings by training a shallow neural network on either the Continuous Bag-of-Words (CBOW) or Skip-gram objective, capturing local context patterns."
+    }
+  ],
+  "GloVe": [
+    {
+      "question": "How does GloVe differ from Word2Vec in generating word embeddings?",
+      "options": {
+        "A": "GloVe uses matrix factorization on global word co-occurrence statistics",
+        "B": "GloVe only works with pre-trained language models",
+        "C": "GloVe ignores word order entirely",
+        "D": "GloVe requires labeled data for supervision"
+      },
+      "correct_options": ["A"],
+      "explanation": "GloVe (Global Vectors) constructs a co-occurrence matrix from the entire corpus and factorizes it to produce embeddings, combining global statistics with local context insights."
+    }
+  ],
+  "FastText": [
+    {
+      "question": "What advantage does FastText have over Word2Vec?",
+      "options": {
+        "A": "It handles out-of-vocabulary words by using subword (n-gram) information",
+        "B": "It requires significantly less training data",
+        "C": "It eliminates the need for word embeddings entirely",
+        "D": "It only works for English text"
+      },
+      "correct_options": ["A"],
+      "explanation": "FastText extends Word2Vec by representing words as bags of character n-grams, enabling embeddings for rare or unseen words by combining their subword components."
+    }
+  ],
+  "vector_search_and_embeddings": [
+    {
+      "question": "What is the primary purpose of vector embeddings in unstructured data processing?",
+      "options": {
+        "A": "To compress text data into smaller files",
+        "B": "To represent words or documents as dense numerical vectors capturing semantic meaning",
+        "C": "To encrypt sensitive text data",
+        "D": "To convert images into text descriptions"
+      },
+      "correct_options": ["B"],
+      "explanation": "Vector embeddings transform words, sentences, or documents into numerical vectors in a high-dimensional space, where similar items are closer together. This enables semantic search, clustering, and other ML tasks."
+    }
+  ],
+  "Word2Vec": [
+    {
+      "question": "Which of the following is a key feature of Word2Vec?",
+      "options": {
+        "A": "It relies on global co-occurrence statistics like GloVe",
+        "B": "It uses a neural network to predict surrounding words (CBOW) or target words (Skip-gram)",
+        "C": "It requires manual feature engineering for word relationships",
+        "D": "It only works for languages with explicit word boundaries"
+      },
+      "correct_options": ["B"],
+      "explanation": "Word2Vec learns word embeddings by training a shallow neural network on either the Continuous Bag-of-Words (CBOW) or Skip-gram objective, capturing local context patterns."
+    }
+  ],
+  "GloVe": [
+    {
+      "question": "How does GloVe differ from Word2Vec in generating word embeddings?",
+      "options": {
+        "A": "GloVe uses matrix factorization on global word co-occurrence statistics",
+        "B": "GloVe only works with pre-trained language models",
+        "C": "GloVe ignores word order entirely",
+        "D": "GloVe requires labeled data for supervision"
+      },
+      "correct_options": ["A"],
+      "explanation": "GloVe (Global Vectors) constructs a co-occurrence matrix from the entire corpus and factorizes it to produce embeddings, combining global statistics with local context insights."
+    }
+  ],
+  "FastText": [
+    {
+      "question": "What advantage does FastText have over Word2Vec?",
+      "options": {
+        "A": "It handles out-of-vocabulary words by using subword (n-gram) information",
+        "B": "It requires significantly less training data",
+        "C": "It eliminates the need for word embeddings entirely",
+        "D": "It only works for English text"
+      },
+      "correct_options": ["A"],
+      "explanation": "FastText extends Word2Vec by representing words as bags of character n-grams, enabling embeddings for rare or unseen words by combining their subword components."
+    }
+  ],
+  "deep_neural_networks_for_nlp": [
+    {
+      "question": "Why are traditional ANNs (Artificial Neural Networks) less effective for sequential data like text?",
+      "options": {
+        "A": "They lack memory of previous inputs",
+        "B": "They require fixed-size input vectors, losing word order",
+        "C": "They cannot handle non-linear relationships",
+        "D": "Both A and B"
+      },
+      "correct_options": ["D"],
+      "explanation": "ANNs process inputs independently (no memory) and require fixed-length inputs, making them unsuitable for variable-length sequences where order matters."
+    },
+    {
+      "question": "What is the key limitation of vanilla RNNs (Recurrent Neural Networks)?",
+      "options": {
+        "A": "They cannot process sequences longer than 100 tokens",
+        "B": "They suffer from vanishing/exploding gradients in long sequences",
+        "C": "They require GPU acceleration",
+        "D": "They only work with convolutional layers"
+      },
+      "correct_options": ["B"],
+      "explanation": "RNNs struggle with long-term dependencies due to repeated multiplication of gradients during backpropagation, causing them to vanish or explode."
+    },
+    {
+      "question": "How does LSTM (Long Short-Term Memory) address RNN's vanishing gradient problem?",
+      "options": {
+        "A": "By using a gating mechanism to regulate information flow",
+        "B": "By removing recurrent connections entirely",
+        "C": "By increasing the learning rate",
+        "D": "By using only sigmoid activation functions"
+      },
+      "correct_options": ["A"],
+      "explanation": "LSTM's gates (input, forget, output) selectively add/remove information to the cell state, enabling long-term dependency learning."
+    },
+    {
+      "question": "What is an advantage of GRU (Gated Recurrent Unit) over LSTM?",
+      "options": {
+        "A": "GRU has fewer parameters, making it faster to train",
+        "B": "GRU always outperforms LSTM in accuracy",
+        "C": "GRU eliminates all vanishing gradients",
+        "D": "GRU does not use activation functions"
+      },
+      "correct_options": ["A"],
+      "explanation": "GRU combines the forget and input gates into a single update gate, reducing computational complexity while often matching LSTM performance."
+    },
+    {
+      "question": "Which architecture is most suitable for machine translation?",
+      "options": {
+        "A": "Feedforward ANN",
+        "B": "Vanilla RNN",
+        "C": "LSTM-based Encoder-Decoder",
+        "D": "None of the above"
+      },
+      "correct_options": ["C"],
+      "explanation": "Encoder-Decoder LSTMs can handle variable-length input/output sequences, capturing context for translation (though modern systems use Transformers)."
+    }
+  ],
+  "activation_functions": [
+    {
+      "question": "Why is ReLU preferred over Sigmoid/Tanh in deep networks?",
+      "options": {
+        "A": "It avoids the vanishing gradient problem",
+        "B": "It is computationally cheaper",
+        "C": "It sparsely activates neurons",
+        "D": "All of the above"
+      },
+      "correct_options": ["D"],
+      "explanation": "ReLU (Rectified Linear Unit) avoids saturation (unlike Sigmoid/Tanh), speeds up training, and induces sparsity by outputting zero for negative inputs."
+    },
+    {
+      "question": "Where might Sigmoid still be used despite its limitations?",
+      "options": {
+        "A": "Input layer of image classifiers",
+        "B": "Output layer for binary classification",
+        "C": "Attention mechanisms in Transformers",
+        "D": "Embedding layers"
+      },
+      "correct_options": ["B"],
+      "explanation": "Sigmoid maps outputs to [0,1], making it interpretable as a probability for binary tasks (though LogSoftmax is often preferred)."
+    }
+  ],
+  "encoder_decoder_attention": [
+    {
+      "question": "What is the primary bottleneck in basic Encoder-Decoder architectures?",
+      "options": {
+        "A": "The encoder cannot process words in parallel",
+        "B": "The decoder must rely on a single fixed-length context vector",
+        "C": "They cannot handle embeddings",
+        "D": "They require labeled data for pretraining"
+      },
+      "correct_options": ["B"],
+      "explanation": "Compressing the entire input sequence into one vector loses information, especially for long sequences. Attention mitigates this."
+    },
+    {
+      "question": "How does attention improve Seq2Seq models?",
+      "options": {
+        "A": "By allowing the decoder to dynamically focus on relevant encoder states",
+        "B": "By eliminating the need for an encoder",
+        "C": "By reducing the model's parameter count",
+        "D": "By replacing RNNs with CNNs"
+      },
+      "correct_options": ["A"],
+      "explanation": "Attention computes weighted sums of encoder states at each decoder step, preserving context and improving long-sequence performance."
+    },
+    {
+      "question": "What is Multi-Task Learning (MTL) in Seq2Seq models?",
+      "options": {
+        "A": "Training one model on multiple related tasks (e.g., translation + summarization)",
+        "B": "Using multiple decoders for the same task",
+        "C": "Combining RNNs and LSTMs in one layer",
+        "D": "None of the above"
+      },
+      "correct_options": ["A"],
+      "explanation": "MTL shares representations across tasks, improving generalization and data efficiency (e.g., a single model for translation/summarization)."
+    }
+  ],
+  "search_methods": [
+    {
+      "question": "Why is greedy search suboptimal for sequence generation?",
+      "options": {
+        "A": "It always selects the highest-probability token at each step, ignoring global optimality",
+        "B": "It requires quadratic time complexity",
+        "C": "It cannot handle RNNs",
+        "D": "It only works with convolutional layers"
+      },
+      "correct_options": ["A"],
+      "explanation": "Greedy search may lead to locally optimal but globally suboptimal sequences (e.g., repetitive or incoherent text)."
+    },
+    {
+      "question": "What is the trade-off with beam search?",
+      "options": {
+        "A": "Larger beams improve quality but increase computation/memory",
+        "B": "Smaller beams guarantee global optimality",
+        "C": "Beam search cannot use attention",
+        "D": "It only works with exhaustive search"
+      },
+      "correct_options": ["A"],
+      "explanation": "Beam search tracks top-k candidates per step (balancing quality and cost), but larger beams are slower and may still not find the global optimum."
+    }
+  ],
+  "transformers_and_attention": [
+    {
+      "question": "What is the key innovation of the Transformer architecture over RNNs/LSTMs?",
+      "options": {
+        "A": "It uses convolutional layers for positional encoding",
+        "B": "It relies entirely on self-attention to capture global dependencies in parallel",
+        "C": "It eliminates the need for embedding layers",
+        "D": "It requires shorter sequences than RNNs"
+      },
+      "correct_options": ["B"],
+      "explanation": "Transformers replace sequential processing with parallelizable self-attention, enabling direct modeling of long-range dependencies without recurrence."
+    },
+    {
+      "question": "Why does multi-head attention outperform single-head attention?",
+      "options": {
+        "A": "It allows the model to focus on different representation subspaces (e.g., syntax, semantics) simultaneously",
+        "B": "It reduces the model's parameter count",
+        "C": "It eliminates the need for residual connections",
+        "D": "It only works with encoder-decoder architectures"
+      },
+      "correct_options": ["A"],
+      "explanation": "Multi-head attention learns diverse attention patterns (e.g., one head for pronouns, another for verbs), improving representational capacity."
+    },
+    {
+      "question": "What is the purpose of positional encoding in Transformers?",
+      "options": {
+        "A": "To embed the absolute position of tokens since self-attention is order-agnostic",
+        "B": "To replace token embeddings entirely",
+        "C": "To reduce the dimensionality of attention heads",
+        "D": "To eliminate the need for the Query-Key-Value mechanism"
+      },
+      "correct_options": ["A"],
+      "explanation": "Positional encodings (e.g., sin/cos functions) inject token order information into the model, as self-attention lacks inherent sequence awareness."
+    },
+    {
+      "question": "How does cross-attention differ from self-attention?",
+      "options": {
+        "A": "Cross-attention operates between two different sequences (e.g., encoder-decoder), while self-attention operates within one sequence",
+        "B": "Cross-attention eliminates the need for positional encoding",
+        "C": "Cross-attention does not use Query-Key-Value matrices",
+        "D": "Cross-attention is only used in BERT"
+      },
+      "correct_options": ["A"],
+      "explanation": "Cross-attention lets the decoder attend to the encoder's output (e.g., in translation), whereas self-attention processes intra-sequence context."
+    },
+    {
+      "question": "Why are residual connections critical in deep Transformer models?",
+      "options": {
+        "A": "They mitigate vanishing gradients by allowing unimpeded gradient flow through skip connections",
+        "B": "They reduce the need for attention mechanisms",
+        "C": "They replace layer normalization",
+        "D": "They eliminate positional encoding"
+      },
+      "correct_options": ["A"],
+      "explanation": "Residual connections (e.g., x + F(x)) preserve gradients during backpropagation, enabling training of very deep networks."
+    },
+    {
+      "question": "What is the primary task BERT is pretrained on?",
+      "options": {
+        "A": "Next-token prediction (like GPT)",
+        "B": "Masked language modeling (MLM) and next sentence prediction (NSP)",
+        "C": "Image captioning",
+        "D": "Speech recognition"
+      },
+      "correct_options": ["B"],
+      "explanation": "BERT uses MLM (predicting masked tokens) and NSP (predicting if two sentences are consecutive) for bidirectional context learning."
+    },
+    {
+      "question": "What causes LLM hallucination?",
+      "options": {
+        "A": "The model generates plausible but factually incorrect information not grounded in its training data",
+        "B": "A bug in attention mechanisms",
+        "C": "Overuse of positional encoding",
+        "D": "Insufficient GPU memory"
+      },
+      "correct_options": ["A"],
+      "explanation": "Hallucination occurs when LLMs generate confident but false outputs, often due to over-optimization for fluency over accuracy."
+    },
+    {
+      "question": "How does RAG mitigate hallucination?",
+      "options": {
+        "A": "By retrieving relevant documents from an external knowledge source to ground generation",
+        "B": "By increasing model size",
+        "C": "By removing attention heads",
+        "D": "By using only encoder layers"
+      },
+      "correct_options": ["A"],
+      "explanation": "Retrieval-Augmented Generation (RAG) combines retrieval of up-to-date external knowledge with generation, reducing reliance on parametric memory alone."
+    }
+  ],
+  "probabilistic_language_models": [
+    {
+      "question": "What does the Markov assumption state in N-Gram language models?",
+      "options": {
+        "A": "A word's probability depends only on its immediate preceding n-1 words (limited history)",
+        "B": "All words in a sentence are independent",
+        "C": "Word order does not matter",
+        "D": "Probabilities must sum to 2.0"
+      },
+      "correct_options": ["A"],
+      "explanation": "The Markov assumption simplifies computation by approximating a word's probability based on a fixed window of previous words (e.g., bigram: P(w_i | w_{i-1}))."
+    },
+    {
+      "question": "How is the joint probability of a sentence computed in a trigram model?",
+      "options": {
+        "A": "P(w1, w2, ..., wn) = P(w1) * P(w2|w1) * P(w3|w1,w2) * ... * P(wn|wn-2,wn-1)",
+        "B": "P(w1, w2, ..., wn) = P(w1) + P(w2) + ... + P(wn)",
+        "C": "P(w1, w2, ..., wn) = max(P(w1), P(w2), ..., P(wn))",
+        "D": "Joint probability cannot be computed for N-Grams"
+      },
+      "correct_options": ["A"],
+      "explanation": "The chain rule decomposes the joint probability into conditional probabilities under the trigram assumption (2-word history)."
+    },
+    {
+      "question": "Why are <SoS> and <EoS> tokens used in N-Gram models?",
+      "options": {
+        "A": "To provide boundary context for start/end of sentences (e.g., P(w1|<SoS>))",
+        "B": "To increase vocabulary size artificially",
+        "C": "To replace smoothing techniques",
+        "D": "They are only needed in neural LMs"
+      },
+      "correct_options": ["A"],
+      "explanation": "<SoS> (Start of Sentence) and <EoS> (End of Sentence) tokens standardize probability calculations for the first and last words in a sequence."
+    },
+    {
+      "question": "What is the primary issue with maximum likelihood estimation (MLE) for N-Grams?",
+      "options": {
+        "A": "It assigns zero probability to unseen N-Grams (sparsity problem)",
+        "B": "It overweights rare N-Grams",
+        "C": "It requires GPU acceleration",
+        "D": "It cannot handle <EoS> tokens"
+      },
+      "correct_options": ["A"],
+      "explanation": "MLE estimates P(w_i|w_{i-1}) = count(w_{i-1}, w_i) / count(w_{i-1}), which fails for unseen N-Grams without smoothing."
+    },
+    {
+      "question": "How does Laplace (add-one) smoothing work?",
+      "options": {
+        "A": "It adds 1 to all N-Gram counts (including unseen ones) and renormalizes",
+        "B": "It multiplies counts by 0.5",
+        "C": "It only smooths unigrams",
+        "D": "It eliminates the need for a vocabulary"
+      },
+      "correct_options": ["A"],
+      "explanation": "Laplace smoothing avoids zero probabilities by pretending every N-Gram occurred at least once, but over-smoothes frequent N-Grams."
+    },
+    {
+      "question": "What is a drawback of Katz backoff compared to interpolation?",
+      "options": {
+        "A": "It completely ignores higher-order N-Grams if they are unseen, falling back to lower-order models",
+        "B": "It requires more memory than Laplace smoothing",
+        "C": "It cannot handle <SoS> tokens",
+        "D": "It only works for bigrams"
+      },
+      "correct_options": ["A"],
+      "explanation": "Katz backoff uses higher-order N-Grams only if they exist in training data, otherwise 'backs off' to lower-order models, potentially losing context."
+    },
+    {
+      "question": "Why is stupid backoff computationally efficient?",
+      "options": {
+        "A": "It uses a fixed discount factor (e.g., 0.4) without normalization, avoiding expensive probability calculations",
+        "B": "It eliminates all bigrams",
+        "C": "It doesn't require vocabulary counts",
+        "D": "It only works with Laplace smoothing"
+      },
+      "correct_options": ["A"],
+      "explanation": "Stupid backoff approximates probabilities by scaling down lower-order scores without ensuring proper normalization, trading theory for speed."
+    },
+    {
+      "question": "How is perplexity defined for a language model?",
+      "options": {
+        "A": "PP(W) = exp(-1/N * sum(log P(w_i | context)))",
+        "B": "PP(W) = number of words in the vocabulary",
+        "C": "PP(W) = total N-Gram count",
+        "D": "PP(W) = accuracy on named entity recognition"
+      },
+      "correct_options": ["A"],
+      "explanation": "Perplexity measures how 'surprised' the model is by test data (lower is better). It exponentiates the average negative log-likelihood per word."
+    },
+    {
+      "question": "What is the 'OOV' problem in language modeling?",
+      "options": {
+        "A": "The model encounters words not in its vocabulary during evaluation",
+        "B": "Over-optimization of validation loss",
+        "C": "Too many attention heads in Transformers",
+        "D": "Excessive use of positional encoding"
+      },
+      "correct_options": ["A"],
+      "explanation": "Out-of-Vocabulary (OOV) words force models to use fallback strategies (e.g., <UNK> tokens or subword units), hurting performance."
+    }
+  ],
+  "siamese_sequence_models": [
+    {
+      "question": "What is the primary purpose of a Siamese network architecture?",
+      "options": {
+        "A": "To learn embeddings where similar inputs are close and dissimilar inputs are far apart",
+        "B": "To classify inputs into thousands of categories",
+        "C": "To generate new sequences autoregressively",
+        "D": "To replace attention mechanisms in Transformers"
+      },
+      "correct_options": ["A"],
+      "explanation": "Siamese networks use weight-sharing sub-networks to map inputs to a metric space where distance reflects semantic similarity."
+    },
+    {
+      "question": "Why are LSTMs commonly used in Siamese networks for text?",
+      "options": {
+        "A": "They can process variable-length sequences while capturing long-range dependencies",
+        "B": "They are faster to train than CNNs",
+        "C": "They eliminate the need for embedding layers",
+        "D": "They don't require any loss function"
+      },
+      "correct_options": ["A"],
+      "explanation": "LSTMs handle sequential data effectively, making them suitable for text-based Siamese networks where input length varies."
+    },
+    {
+      "question": "What is the role of the alpha (margin) parameter in triplet loss?",
+      "options": {
+        "A": "It enforces a minimum distance between positive and negative pairs in the embedding space",
+        "B": "It controls the learning rate of the optimizer",
+        "C": "It determines the batch size for training",
+        "D": "It replaces the need for negative samples"
+      },
+      "correct_options": ["A"],
+      "explanation": "Alpha defines the margin by which positive pairs should be closer to the anchor than negatives (e.g., d(a,p) + α < d(a,n))."
+    },
+    {
+      "question": "What are 'hard negatives' in triplet loss training?",
+      "options": {
+        "A": "Negative samples that are currently too close to the anchor in the embedding space",
+        "B": "Negatives with zero similarity to the anchor",
+        "C": "Randomly shuffled input sequences",
+        "D": "Positives with incorrect labels"
+      },
+      "correct_options": ["A"],
+      "explanation": "Hard negatives violate the margin condition (d(a,p) + α > d(a,n)), providing the most informative signal for model updates."
+    },
+    {
+      "question": "How does one-shot learning differ from traditional classification?",
+      "options": {
+        "A": "It learns to recognize new classes from one or few examples by leveraging similarity metrics",
+        "B": "It requires thousands of examples per class",
+        "C": "It doesn't use backpropagation",
+        "D": "It eliminates the need for embeddings"
+      },
+      "correct_options": ["A"],
+      "explanation": "One-shot learning uses prior knowledge (e.g., a similarity function) to generalize to new classes with minimal data, unlike classification which needs many labeled examples per class."
+    }
+  ],
+  "autocorrect_probabilistic_models": [
+    {
+      "question": "What is the core idea behind the noisy channel model for autocorrect?",
+      "options": {
+        "A": "It treats misspellings as noisy transmissions of intended words and finds the most probable original word",
+        "B": "It uses neural networks to generate spelling suggestions",
+        "C": "It ignores word frequencies",
+        "D": "It only works for non-word errors"
+      },
+      "correct_options": ["A"],
+      "explanation": "The noisy channel decomposes P(w|x) into P(x|w) (error model) and P(w) (language model) via Bayes' Rule."
+    },
+    {
+      "question": "What is the key difference between non-word and real-word errors?",
+      "options": {
+        "A": "Non-word errors are invalid words (e.g., 'graffe'), while real-word errors are valid but incorrect (e.g., 'their' vs 'there')",
+        "B": "Non-word errors are easier to detect",
+        "C": "Real-word errors require no context",
+        "D": "Non-word errors only occur in non-English languages"
+      },
+      "correct_options": ["A"],
+      "explanation": "Non-word errors can be detected via dictionary lookup, while real-word errors need context (e.g., n-gram stats) to identify."
+    },
+    {
+      "question": "How is minimum edit distance (Levenshtein distance) computed?",
+      "options": {
+        "A": "Using dynamic programming to count insertions, deletions, and substitutions needed to transform one string to another",
+        "B": "By training an LSTM on spelling corrections",
+        "C": "Via exact string matching",
+        "D": "With attention mechanisms"
+      },
+      "correct_options": ["A"],
+      "explanation": "Levenshtein distance uses a DP matrix where cell [i,j] stores the cost to convert the first i chars of string A to first j chars of string B."
+    },
+    {
+      "question": "What does Damerau-Levenshtein distance add to basic Levenshtein?",
+      "options": {
+        "A": "Transposition of adjacent characters as a fourth operation",
+        "B": "Multiplication of all costs",
+        "C": "Semantic similarity metrics",
+        "D": "Neural network components"
+      },
+      "correct_options": ["A"],
+      "explanation": "Damerau-Levenshtein also accounts for swaps (e.g., 'hte' → 'the'), common in typos."
+    },
+    {
+      "question": "In Bayes' Rule for autocorrect P(w|x) ∝ P(x|w)P(w), what does P(w) represent?",
+      "options": {
+        "A": "The language model probability (frequency) of word w",
+        "B": "The probability of observing typo x given intended word w",
+        "C": "The normalization constant",
+        "D": "The edit distance between x and w"
+      },
+      "correct_options": ["A"],
+      "explanation": "P(w) is the prior probability of the word (from unigram/bigram counts), favoring common words like 'the' over rare ones."
+    },
+    {
+      "question": "How might P(x|w) be estimated for a typo like 'acress' → 'actress'?",
+      "options": {
+        "A": "By modeling common error patterns (e.g., single-letter deletions/insertions) via edit distance probabilities",
+        "B": "Using a neural language model only",
+        "C": "Assuming all typos are equally likely",
+        "D": "Ignoring the word length"
+      },
+      "correct_options": ["A"],
+      "explanation": "P(x|w) can be based on empirical error rates (e.g., 'e'→'a' is more likely than 'e'→'z') or uniform costs per edit operation."
+    },
+    {
+      "question": "Why is dynamic programming essential for edit distance calculations?",
+      "options": {
+        "A": "It avoids recomputing subproblems by building up solutions incrementally",
+        "B": "It requires less memory than hash tables",
+        "C": "It eliminates the need for language models",
+        "D": "It only works with binary strings"
+      },
+      "correct_options": ["A"],
+      "explanation": "DP exploits overlapping subproblems (e.g., edits to prefixes of strings) for O(mn) time complexity vs. O(3^m) brute-force."
+    }
+  ],
+  "probability": [
+    {
+      "question": "Given a bigram language model, what is the probability of the sentence \"how are you\"?",
+      "options": {
+        "A": "P(how) × P(are | how) × P(you | are)",
+        "B": "P(how | are) × P(are | you) × P(you)",
+        "C": "P(you | are) × P(how | are) × P(how)",
+        "D": "P(are | you) × P(you | how) × P(how)"
+      },
+      "correct_options": ["A"]
+    },
+    {
+      "question": "In a unigram model, how is the probability of the sentence \"how are you\" computed?",
+      "options": {
+        "A": "P(how | are) × P(are | you) × P(you)",
+        "B": "P(how) + P(are) + P(you)",
+        "C": "P(how) × P(are) × P(you)",
+        "D": "P(you | are) + P(are | how) + P(how)"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following is true about trigram language models?",
+      "options": {
+        "A": "They consider only the current word",
+        "B": "They use the two previous words to predict the next word",
+        "C": "They are less accurate than unigram models",
+        "D": "They ignore word order"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "If P(how) = 0.1, P(are | how) = 0.4, and P(you | are) = 0.6, what is the probability of the sentence \"how are you\" in a bigram model?",
+      "options": {
+        "A": "0.24",
+        "B": "0.1",
+        "C": "0.6",
+        "D": "0.4"
+      },
+      "correct_options": ["A"]
+    },
+    {
+      "question": "What is a major limitation of n-gram models in estimating sentence probability?",
+      "options": {
+        "A": "They model long-range dependencies effectively",
+        "B": "They can work with infinite vocabulary",
+        "C": "They suffer from sparsity for rare n-grams",
+        "D": "They use attention mechanisms"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "In a trigram model, which expression gives the probability of the sentence \"how are you doing\"?",
+      "options": {
+        "A": "P(how) × P(are | how) × P(you | how are) × P(doing | are you)",
+        "B": "P(how | are) × P(are | you) × P(you | doing)",
+        "C": "P(how) × P(are) × P(you) × P(doing)",
+        "D": "P(how | are you) × P(are | how you) × P(you | how are)"
+      },
+      "correct_options": ["A"]
+    },
+    {
+      "question": "Which of the following smoothing techniques is commonly used to avoid zero probabilities in n-gram models?",
+      "options": {
+        "A": "Layer normalization",
+        "B": "Dropout",
+        "C": "Laplace smoothing",
+        "D": "Beam search"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "What is the main purpose of using logarithms in computing sentence probabilities?",
+      "options": {
+        "A": "To increase the probability values",
+        "B": "To ignore rare words",
+        "C": "To prevent underflow by turning products into sums",
+        "D": "To remove stop words"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "If a trigram model has P(how) = 0.05, P(are | how) = 0.3, and P(you | how are) = 0.6, what is P(\"how are you\")?",
+      "options": {
+        "A": "0.09",
+        "B": "0.15",
+        "C": "0.005",
+        "D": "0.01"
+      },
+      "correct_options": ["D"]
+    },
+    {
+      "question": "In a bigram model, which term is missing in the expression: P(\"how are you\") = ___ × P(are | how) × P(you | are)?",
+      "options": {
+        "A": "P(how)",
+        "B": "P(are)",
+        "C": "P(you)",
+        "D": "P(how | <start>)"
+      },
+      "correct_options": ["D"]
+    }
+  ],
+  "mix": [
+    {
+      "question": "What does the 'self' in self-attention refer to in Transformer architectures?",
+      "options": {
+        "A": "Attention from one sequence to another",
+        "B": "Each token attending to all tokens in the same sequence",
+        "C": "Recurrent token flow between layers",
+        "D": "Attention only to previous tokens"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which components are part of a Transformer encoder block? (Select all that apply)",
+      "options": {
+        "A": "Multi-head self-attention",
+        "B": "Positional Encoding",
+        "C": "Feedforward Neural Network",
+        "D": "Masked Self-Attention"
+      },
+      "correct_options": ["A", "B", "C"]
+    },
+    {
+      "question": "What is the purpose of positional encoding in Transformers?",
+      "options": {
+        "A": "To indicate token frequency",
+        "B": "To represent token identity",
+        "C": "To encode word order since Transformers lack recurrence",
+        "D": "To perform syntactic parsing"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following models is most associated with RAG (Retrieval-Augmented Generation)?",
+      "options": {
+        "A": "GPT-2",
+        "B": "BERT",
+        "C": "T5 with DPR retriever",
+        "D": "LSTM with attention"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "In the RAG architecture, what does the retriever module do?",
+      "options": {
+        "A": "Generates new tokens",
+        "B": "Creates embeddings of generated text",
+        "C": "Fetches relevant documents from a knowledge base",
+        "D": "Decodes the output sequence"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following are valid types of word embeddings? (Select all that apply)",
+      "options": {
+        "A": "Word2Vec",
+        "B": "TF-IDF",
+        "C": "GloVe",
+        "D": "BERT Embeddings"
+      },
+      "correct_options": ["A", "C", "D"]
+    },
+    {
+      "question": "Which similarity measure is most commonly used for comparing embedding vectors?",
+      "options": {
+        "A": "Jaccard Index",
+        "B": "Cosine Similarity",
+        "C": "Manhattan Distance",
+        "D": "Hamming Distance"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which of the following models use masked language modeling as a pretraining objective?",
+      "options": {
+        "A": "GPT-3",
+        "B": "BERT",
+        "C": "RoBERTa",
+        "D": "T5"
+      },
+      "correct_options": ["B", "C"]
+    },
+    {
+      "question": "In NLP, what does the term 'tokenization' refer to?",
+      "options": {
+        "A": "Converting numbers to text",
+        "B": "Splitting text into smaller units like words or subwords",
+        "C": "Calculating sentence probabilities",
+        "D": "Detecting sentiment in text"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which Transformer component allows the model to focus on different parts of a sentence simultaneously?",
+      "options": {
+        "A": "Layer Normalization",
+        "B": "Multi-head Attention",
+        "C": "Residual Connection",
+        "D": "Positional Embeddings"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "What is the main benefit of using embeddings over one-hot encoding?",
+      "options": {
+        "A": "They increase dimensionality",
+        "B": "They allow fixed-length encoding of text",
+        "C": "They capture semantic similarity between words",
+        "D": "They are easier to implement"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following are responsibilities of the decoder in a Transformer? (Select all that apply)",
+      "options": {
+        "A": "Attend to encoder outputs",
+        "B": "Perform masked self-attention",
+        "C": "Generate output sequence tokens",
+        "D": "Tokenize input sequence"
+      },
+      "correct_options": ["A", "B", "C"]
+    },
+    {
+      "question": "What kind of attention is used in the decoder part of a Transformer?",
+      "options": {
+        "A": "Only self-attention",
+        "B": "Masked self-attention and cross-attention",
+        "C": "Multi-head self-attention only",
+        "D": "Encoder attention only"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which technique helps avoid exposure bias during training of seq2seq models?",
+      "options": {
+        "A": "Beam search",
+        "B": "Teacher forcing",
+        "C": "Token masking",
+        "D": "Gradient clipping"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which component in a Transformer is responsible for the transformation of vectors into new representations?",
+      "options": {
+        "A": "Embedding layer",
+        "B": "Feedforward network",
+        "C": "Attention mask",
+        "D": "Dropout layer"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "In the RAG model, where are retrieved documents typically encoded?",
+      "options": {
+        "A": "By the retriever only",
+        "B": "By a separate Transformer encoder",
+        "C": "Within the tokenizer",
+        "D": "Inside the attention mask"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "Which Transformer-based model is designed for conditional text generation?",
+      "options": {
+        "A": "BERT",
+        "B": "RoBERTa",
+        "C": "T5",
+        "D": "DistilBERT"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following tasks are examples of generative NLP tasks? (Select all that apply)",
+      "options": {
+        "A": "Machine Translation",
+        "B": "Document Classification",
+        "C": "Text Summarization",
+        "D": "Question Answering (generative)"
+      },
+      "correct_options": ["A", "C", "D"]
+    },
+    {
+      "question": "In sentence embeddings, what does a high cosine similarity between two vectors suggest?",
+      "options": {
+        "A": "The sentences are syntactically identical",
+        "B": "The embeddings are noisy",
+        "C": "The sentences are semantically similar",
+        "D": "The embeddings are from different domains"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following describe Dense Passage Retrieval (DPR)? (Select all that apply)",
+      "options": {
+        "A": "It uses a dual-encoder setup",
+        "B": "It relies on sparse keyword matching",
+        "C": "It maps queries and documents into the same embedding space",
+        "D": "It is commonly used in RAG pipelines"
+      },
+      "correct_options": ["A", "C", "D"]
+    },
+      {
+        "question": "Which type of attention does BERT use?",
+        "options": {
+          "A": "Causal attention",
+          "B": "Masked attention",
+          "C": "Bidirectional self-attention",
+          "D": "Greedy attention"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which model architecture does T5 use internally?",
+        "options": {
+          "A": "Only encoder",
+          "B": "Only decoder",
+          "C": "Encoder-decoder (seq2seq)",
+          "D": "RNN with attention"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "In NLP, stemming is used to:",
+        "options": {
+          "A": "Reduce a word to its base or root form",
+          "B": "Convert tokens into embeddings",
+          "C": "Detect named entities",
+          "D": "Normalize token probabilities"
+        },
+        "correct_options": ["A"]
+      },
+      {
+        "question": "Which transformer-based model is designed to generate text autoregressively?",
+        "options": {
+          "A": "BERT",
+          "B": "RoBERTa",
+          "C": "GPT-3",
+          "D": "ELECTRA"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which technique is used to prevent attending to future tokens in Transformer decoders?",
+        "options": {
+          "A": "Dropout",
+          "B": "Gradient Clipping",
+          "C": "Causal Masking",
+          "D": "Layer Normalization"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "What is the dimensionality of BERT base embeddings?",
+        "options": {
+          "A": "256",
+          "B": "768",
+          "C": "1024",
+          "D": "2048"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which of the following are examples of dense embeddings? (Select all that apply)",
+        "options": {
+          "A": "TF-IDF vectors",
+          "B": "Word2Vec embeddings",
+          "C": "BERT sentence embeddings",
+          "D": "Bag-of-Words"
+        },
+        "correct_options": ["B", "C"]
+      },
+      {
+        "question": "Which NLP task involves generating a brief and coherent version of a long text?",
+        "options": {
+          "A": "Text Classification",
+          "B": "Text Summarization",
+          "C": "Text Segmentation",
+          "D": "Dependency Parsing"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "In the RAG framework, how is retrieved information used?",
+        "options": {
+          "A": "Ignored after retrieval",
+          "B": "Used to fine-tune the model",
+          "C": "Appended to the input of the generator",
+          "D": "Only used for re-ranking outputs"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which token is added to the start of every input sequence in BERT?",
+        "options": {
+          "A": "<s>",
+          "B": "[CLS]",
+          "C": "[MASK]",
+          "D": "[SEP]"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which of the following is true about attention scores?",
+        "options": {
+          "A": "They are fixed values",
+          "B": "They are always equal for all tokens",
+          "C": "They are computed dynamically based on query and key",
+          "D": "They are added after the softmax operation"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "What role does the softmax function play in self-attention?",
+        "options": {
+          "A": "Encodes position information",
+          "B": "Normalizes attention scores to probabilities",
+          "C": "Reduces overfitting",
+          "D": "Aggregates token embeddings"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which Transformer variant is optimized for faster inference by distillation?",
+        "options": {
+          "A": "DistilBERT",
+          "B": "BART",
+          "C": "ALBERT",
+          "D": "XLNet"
+        },
+        "correct_options": ["A"]
+      },
+      {
+        "question": "Which of the following are output formats of an embedding layer in NLP? (Select all that apply)",
+        "options": {
+          "A": "Fixed-length vectors",
+          "B": "One-hot encodings",
+          "C": "Dense vector representations",
+          "D": "TF-IDF weights"
+        },
+        "correct_options": ["A", "C"]
+      },
+      {
+        "question": "Which of the following models use both encoder and decoder structures? (Select all that apply)",
+        "options": {
+          "A": "T5",
+          "B": "BERT",
+          "C": "GPT",
+          "D": "BART"
+        },
+        "correct_options": ["A", "D"]
+      },
+      {
+        "question": "What does the 'query' vector represent in self-attention?",
+        "options": {
+          "A": "The word's embedding in the input sequence",
+          "B": "A representation of what a token is looking for",
+          "C": "A signal for decoding",
+          "D": "A classification token"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which of the following are challenges in computing exact sentence probabilities using Transformers? (Select all that apply)",
+        "options": {
+          "A": "Long context modeling",
+          "B": "Lack of autoregressive decoding in BERT",
+          "C": "Intractable normalization",
+          "D": "No recurrence"
+        },
+        "correct_options": ["B", "C"]
+      },
+      {
+        "question": "Which statement is true about embeddings in semantic search?",
+        "options": {
+          "A": "They must be sparse",
+          "B": "They are directly indexed as raw text",
+          "C": "They allow vector similarity comparison",
+          "D": "They are not interpretable by models"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which of these are considered decoder-only transformer models? (Select all that apply)",
+        "options": {
+          "A": "GPT-2",
+          "B": "BERT",
+          "C": "GPT-3",
+          "D": "XLNet"
+        },
+        "correct_options": ["A", "C", "D"]
+      },
+      {
+        "question": "Which pretraining strategy does ELECTRA use?",
+        "options": {
+          "A": "Autoencoding",
+          "B": "Autoregression",
+          "C": "Replaced token detection",
+          "D": "Causal Masking"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which of the following are typical use cases of RAG models? (Select all that apply)",
+        "options": {
+          "A": "Open-domain Question Answering",
+          "B": "Summarization",
+          "C": "Fact-based Generation",
+          "D": "Image Captioning"
+        },
+        "correct_options": ["A", "B", "C"]
+      },
+      {
+        "question": "Which technique is commonly used in RAG to embed documents for retrieval?",
+        "options": {
+          "A": "One-hot encoding",
+          "B": "Sparse matrix multiplication",
+          "C": "Dense embeddings with DPR",
+          "D": "Character-level convolution"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "What is the main difference between dense and sparse retrieval methods?",
+        "options": {
+          "A": "Dense uses token counts",
+          "B": "Sparse uses embeddings",
+          "C": "Dense matches meaning, sparse matches keywords",
+          "D": "Sparse retrieval is always more accurate"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "What is beam search used for in Transformers?",
+        "options": {
+          "A": "Improving training speed",
+          "B": "Generating diverse output sequences",
+          "C": "Embedding token vectors",
+          "D": "Optimizing attention scores"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which Transformer variant was designed to scale efficiently using factorized embedding parameters?",
+        "options": {
+          "A": "GPT-3",
+          "B": "DistilBERT",
+          "C": "ALBERT",
+          "D": "XLNet"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "What kind of loss is typically used during language model pretraining?",
+        "options": {
+          "A": "Binary cross-entropy",
+          "B": "Mean squared error",
+          "C": "Categorical cross-entropy",
+          "D": "Contrastive loss"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which of these can improve semantic search results using embeddings?",
+        "options": {
+          "A": "Increasing token count",
+          "B": "Reducing context size",
+          "C": "Using contextual embeddings like BERT",
+          "D": "Ignoring out-of-vocabulary tokens"
+        },
+        "correct_options": ["C"]
+      },
+      {
+        "question": "Which of the following is a disadvantage of TF-IDF compared to modern embeddings?",
+        "options": {
+          "A": "It’s slow to compute",
+          "B": "It doesn’t capture semantic similarity",
+          "C": "It works poorly on long texts",
+          "D": "It has high accuracy for classification"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "What does the decoder use to condition the generation in a Transformer encoder-decoder model?",
+        "options": {
+          "A": "Self-attention over its own outputs only",
+          "B": "Cross-attention over encoder outputs",
+          "C": "Sentence embeddings",
+          "D": "Mask tokens"
+        },
+        "correct_options": ["B"]
+      },
+      {
+        "question": "Which of the following is true about zero-shot learning in NLP?",
+        "options": {
+          "A": "It requires labeled training data",
+          "B": "It uses embeddings to generalize to new tasks",
+          "C": "It depends on rule-based systems",
+          "D": "It only works with RNNs"
+        },
+        "correct_options": ["B"]
+      }
+    ],
+    "searches": [
+    {
+      "question": "What is the main limitation of greedy search in text generation?",
+      "options": {
+        "A": "It considers all possible sequences",
+        "B": "It requires a large beam width",
+        "C": "It may miss globally optimal sequences",
+        "D": "It cannot generate output sequences"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "In beam search, what does the 'beam width' parameter control?",
+      "options": {
+        "A": "The number of layers in a neural network",
+        "B": "The number of tokens generated at once",
+        "C": "The number of top sequences retained at each step",
+        "D": "The depth of recursive attention layers"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following search strategies guarantees finding the globally optimal output sequence?",
+      "options": {
+        "A": "Greedy Search",
+        "B": "Beam Search",
+        "C": "Exhaustive Search",
+        "D": "Random Sampling"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "How does greedy search work in sequence generation?",
+      "options": {
+        "A": "It explores all possible sequences",
+        "B": "It selects the highest-probability token at each step",
+        "C": "It uses beam width to keep multiple candidates",
+        "D": "It randomly selects tokens"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "What is a key trade-off in beam search as the beam width increases?",
+      "options": {
+        "A": "Faster inference, lower accuracy",
+        "B": "Higher diversity, lower coherence",
+        "C": "Better output quality, higher computation cost",
+        "D": "Lower memory usage, better generalization"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following are disadvantages of exhaustive search? (Select all that apply)",
+      "options": {
+        "A": "Computationally expensive",
+        "B": "Guaranteed to miss best outputs",
+        "C": "Scales poorly with vocabulary size",
+        "D": "Does not work with greedy models"
+      },
+      "correct_options": ["A", "C"]
+    },
+    {
+      "question": "Which search method is most likely to produce repetitive or generic text outputs?",
+      "options": {
+        "A": "Beam Search",
+        "B": "Greedy Search",
+        "C": "Exhaustive Search",
+        "D": "Top-k Sampling"
+      },
+      "correct_options": ["B"]
+    },
+    {
+      "question": "What happens when the beam width is set to 1 in beam search?",
+      "options": {
+        "A": "It becomes exhaustive search",
+        "B": "It becomes random sampling",
+        "C": "It becomes greedy search",
+        "D": "It disables token generation"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Which of the following best describes how beam search differs from greedy search?",
+      "options": {
+        "A": "It uses a scoring function",
+        "B": "It selects all possible tokens",
+        "C": "It maintains multiple hypotheses at each step",
+        "D": "It ignores probabilities"
+      },
+      "correct_options": ["C"]
+    },
+    {
+      "question": "Why is beam search preferred over exhaustive search in practice?",
+      "options": {
+        "A": "It guarantees optimality",
+        "B": "It balances efficiency and output quality",
+        "C": "It is the simplest to implement",
+        "D": "It does not require tokenization"
+      },
+      "correct_options": ["B"]
+    }
   ]
+
 }
