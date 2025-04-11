@@ -84,11 +84,7 @@ def get_explanation(question, options, correct_options):
         Options:
         {options}
         
-        Correct answers: {correct_options}
-        
-        Incorrect answers: {incorrect_options}
-        
-        Please explain why the correct answers are right and why the incorrect answers are wrong.
+        Please tell the correct answer(s) and explain why it is correct.
         """
         
         prompt = PromptTemplate(
